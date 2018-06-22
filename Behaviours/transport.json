@@ -1,0 +1,108 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 251
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "base"
+	}, {
+		"command": "Variable",
+		"name": "position"
+	} ],
+	"outputs": [],
+	"properties": {
+		"AQ3WBp2vYEU7m3he9NcEFch9VAQwfHel": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 303,
+			"y": 33
+		},
+		"NbN8QmSILp86Q9O8srER4uVCMfs1SOuB": {
+			"height": 94,
+			"title": "store",
+			"width": 332,
+			"x": 521,
+			"y": 2
+		},
+		"ReZMkSl6sy6rwyvq69YiggYFUwkoM9aa": {
+			"height": 94,
+			"title": "store",
+			"width": 474,
+			"x": 512,
+			"y": -97
+		},
+		"vcJZ0ReXWUEPnRAPfMQbvmdhPodryLiv": {
+			"height": 132,
+			"title": "exam.Transport",
+			"width": 190,
+			"x": 520,
+			"y": 103
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "ReZMkSl6sy6rwyvq69YiggYFUwkoM9aa",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "transport"
+			}, {
+				"name": "value",
+				"value": "getFreeTransport()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "NbN8QmSILp86Q9O8srER4uVCMfs1SOuB",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "box"
+			}, {
+				"name": "value",
+				"value": "getFreeBox()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "vcJZ0ReXWUEPnRAPfMQbvmdhPodryLiv",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "transporterID",
+				"value": "transport"
+			}, {
+				"name": "targetID",
+				"value": "box"
+			}, {
+				"name": "pos",
+				"value": "position"
+			}, {
+				"name": "finalPos",
+				"value": "base"
+			}, {
+				"name": "scriptName",
+				"value": "exam.Transport"
+			} ],
+			"scriptName": "exam.Transport"
+		} ],
+		"id": "AQ3WBp2vYEU7m3he9NcEFch9VAQwfHel",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

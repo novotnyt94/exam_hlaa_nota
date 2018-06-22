@@ -1,0 +1,174 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "LUOSfuh5hTS5MHfWPa2qySAsXkJo0Wtu",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": ""
+		} ]
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_POSITION",
+		"name": "base"
+	} ],
+	"outputs": [],
+	"properties": {
+		"Bh3INQVh5MFA4dtHov6vktCJqEiibn61": {
+			"height": 110,
+			"title": "TODO Infiltrator",
+			"width": 182,
+			"x": 594,
+			"y": 565
+		},
+		"LUOSfuh5hTS5MHfWPa2qySAsXkJo0Wtu": {
+			"height": 110,
+			"title": "TODO Seer",
+			"width": 156,
+			"x": 591,
+			"y": 447
+		},
+		"NhUNcUk8P8khCPDcYzLlXaNxzX5Qp1ti": {
+			"height": 94,
+			"title": "store",
+			"width": 168,
+			"x": 796,
+			"y": -180
+		},
+		"SjOdyrWUnaTKAFCL5e2B9tdCKe79shhe": {
+			"height": 110,
+			"title": "MobileAttack",
+			"width": 180,
+			"x": 588,
+			"y": 330
+		},
+		"cj8eG8G4YM32vIk0SO77bTmA872GO6lk": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 322,
+			"y": 14
+		},
+		"kKMGArHJQbwYhFfOWdKw0QVhLUyl75UR": {
+			"height": 130,
+			"title": "Transport",
+			"width": 309,
+			"x": 584,
+			"y": 45
+		},
+		"m7XTN6dms4eSMozyYyPJHOZ2he9lM4PR": {
+			"height": 110,
+			"title": "Build",
+			"width": 278,
+			"x": 592,
+			"y": -83
+		},
+		"pZtiym9LPKKSe8kNrkWIIQplC7tNiOtE": {
+			"height": 130,
+			"title": "MetalCollection",
+			"width": 290,
+			"x": 586,
+			"y": 192
+		},
+		"yrvkW8QZRFGL5WKz20I9zsRi0z1ZsyxK": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 590,
+			"y": -170
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "NhUNcUk8P8khCPDcYzLlXaNxzX5Qp1ti",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "_"
+				}, {
+					"name": "value",
+					"value": "mapUpdate()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "yrvkW8QZRFGL5WKz20I9zsRi0z1ZsyxK",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "m7XTN6dms4eSMozyYyPJHOZ2he9lM4PR",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "exam.BuildingBeh"
+			} ],
+			"referenceInputs": [],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "kKMGArHJQbwYhFfOWdKw0QVhLUyl75UR",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "exam.TransportingBeh"
+			} ],
+			"referenceInputs": [ {
+				"name": "base",
+				"value": "base"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "pZtiym9LPKKSe8kNrkWIIQplC7tNiOtE",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "exam.CollectingBeh"
+			} ],
+			"referenceInputs": [ {
+				"name": "iter",
+				"value": "21"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "SjOdyrWUnaTKAFCL5e2B9tdCKe79shhe",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "exam.AttackBeh"
+			} ],
+			"referenceInputs": [],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "Bh3INQVh5MFA4dtHov6vktCJqEiibn61",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": ""
+			} ]
+		} ],
+		"id": "cj8eG8G4YM32vIk0SO77bTmA872GO6lk",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}
