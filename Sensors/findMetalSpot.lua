@@ -32,9 +32,9 @@ function hasMetal(point)
 	return (amount > 0)
 end
 
-return function(lane)
-	for key,value in pairs(lane) do
-		if bb.paths[i][key]=="safe" and hasMetal(value) then 
+return function(laneID)
+	for key,value in pairs(bb.paths[lineID]) do
+		if bb.map[i][key]=="safe" and hasMetal(value) then 
 			return value
 		end
 	end

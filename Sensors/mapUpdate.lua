@@ -64,8 +64,8 @@ function initMap(paths)
 end
 
 
-return function(strongholds, paths)
-	if bb.map == nil then initMap(paths) end
+return function()
+	if bb.map == nil then initMap(bb.paths) end
 	for i=1,3 do
 		updateLaneSafety(i)
 	end

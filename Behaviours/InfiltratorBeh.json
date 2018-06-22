@@ -9,12 +9,33 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
+		"HvEz7ccxEbSsCquhoPPoTI5Asx4fPXMY": {
+			"height": 94,
+			"title": "store",
+			"width": 272,
+			"x": 501,
+			"y": 224
+		},
+		"VmCq9lAJ0PKgTUcRqcxV746l7lj7cRD4": {
+			"height": 98,
+			"title": "store",
+			"width": 231,
+			"x": 503,
+			"y": -16
+		},
 		"dVkDkfx3cKGYAnzuqrDrPWfw8jhT1BUs": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
 			"x": 232,
 			"y": 9
+		},
+		"iZWF9SipVl35WRYnDVFBchDE5izmTVnm": {
+			"height": 94,
+			"title": "store",
+			"width": 274,
+			"x": 494,
+			"y": 108
 		},
 		"tpcs0e5TPK5HLXiJYoCmJUX003MjXIMF": {
 			"height": 97,
@@ -39,6 +60,51 @@
 			}, {
 				"name": "value",
 				"value": "getAllInfiltrators()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "VmCq9lAJ0PKgTUcRqcxV746l7lj7cRD4",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "_"
+			}, {
+				"name": "value",
+				"value": "assignLines()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "iZWF9SipVl35WRYnDVFBchDE5izmTVnm",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "scores"
+			}, {
+				"name": "value",
+				"value": "columnCheck(infiltrators, 500)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "HvEz7ccxEbSsCquhoPPoTI5Asx4fPXMY",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "_"
+			}, {
+				"name": "value",
+				"value": "explode(infiltrators, scores, 3)"
 			}, {
 				"name": "scriptName",
 				"value": "store"

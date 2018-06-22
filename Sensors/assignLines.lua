@@ -29,10 +29,10 @@ end
 
 function givePathCommand(unitID, lineID)
   --TODO get path from missionInfo and follow it; end with CMD.SELFD if nothing was found
-  --for
-  --spCommand(unitID, CMD.MOVE, {...}, {"shift"})
-  --end
-  --spCommand(unitID, CMD.SELFD, {}, {"shift"})
+  for key, point in pairs(bb.paths[lineID]) do
+    spCommand(unitID, CMD.MOVE, {point.x, point.y, point.z}, {"shift"})
+  end
+  spCommand(unitID, CMD.SELFD, {}, {"shift"})
 end
 
 return function()  
